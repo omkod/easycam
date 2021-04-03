@@ -16,7 +16,7 @@ repositories {
 
 2. Add in app gradle:
 
-    implementation 'com.github.omkod:easycam:jitpack-SNAPSHOT'
+    implementation 'com.github.omkod:easycam:main-SNAPSHOT'
 
 
 
