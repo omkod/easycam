@@ -166,10 +166,10 @@ class CameraView : ConstraintLayout {
             initPhotoSize()
             initImageReader()
 
-            if (cameraView.isAvailable) {
+            if (cameraTextureView.isAvailable) {
                 openCamera()
             } else {
-                cameraView.surfaceTextureListener = surfaceTextureListener
+                cameraTextureView.surfaceTextureListener = surfaceTextureListener
             }
         } catch (t: Throwable) {
             Timber.e(t)
@@ -306,9 +306,9 @@ class CameraView : ConstraintLayout {
         }
 
         if (orientation == ORIENTATION_LANDSCAPE) {
-            cameraView.setAspectRatio(size.width, size.height)
+            cameraTextureView.setAspectRatio(size.width, size.height)
         } else {
-            cameraView.setAspectRatio(size.height, size.width)
+            cameraTextureView.setAspectRatio(size.height, size.width)
         }
         previewSize = size
         initZoom()
@@ -477,7 +477,7 @@ class CameraView : ConstraintLayout {
 
     private fun createCameraPreviewSession() {
         try {
-            val texture: SurfaceTexture = cameraView.surfaceTexture!!
+            val texture: SurfaceTexture = cameraTextureView.surfaceTexture!!
             texture.setDefaultBufferSize(previewSize.width, previewSize.height)
             val surface = Surface(texture)
             cameraDevice?.let { camera ->
