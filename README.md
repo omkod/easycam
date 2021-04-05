@@ -6,21 +6,24 @@ One more camera library. Features:
 * Photo resolution select
 * Zoom x1
 
-Using:
+## Setup
 
-1. Add in global gradle:
+1. Add to your global gradle the following:
 
+```java
 repositories {
-        maven { url "https://jitpack.io" }
+    maven { url "https://jitpack.io" }
 }
+```
 
 2. Add in app gradle:
 
+```java
     implementation 'com.github.omkod:easycam:main-SNAPSHOT'
+```
 
 
-
-Tested on devices:
+## Tested on devices:
 
 * Asus_Z00VD Android 5
 * Asus_z010DD Android 6
