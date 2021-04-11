@@ -22,6 +22,9 @@ repositories {
     implementation 'com.github.omkod:easycam:main-SNAPSHOT'
 ```
 
+## Usage
+
+Usage example can be found in [sample folder](https://github.com/omkod/easycam/tree/main/sample)
 
 ## Tested on devices:
 
