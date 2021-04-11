@@ -1,4 +1,4 @@
-One more camera library. Features:
+Simple android camera library. Features:
 
 * Camera switch button (back/front)
 * Flashlight on/off for back and front camera
